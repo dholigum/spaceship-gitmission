@@ -20,7 +20,7 @@ class EngineViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view
     }
     
     @IBAction func navigateToControl(_ sender: UIButton) {
@@ -37,7 +37,7 @@ class EngineViewController: UIViewController {
         if source == .cockpit {
             dismiss(animated: true, completion: nil)
         } else {
-            // test
+            // testing
             let cockpitStoryboard = UIStoryboard(name: "Cockpit", bundle: nil)
             let cockpit = cockpitStoryboard.instantiateViewController(withIdentifier: "cockpitstoryboard") as! CockpitViewController
             cockpit.source = .engine
